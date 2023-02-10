@@ -1,4 +1,13 @@
-export function Search () {
+'use client'
+
+import { useState } from "react"
+
+export function Search ({ ListOfChars }) {
+  console.log('List', ListOfChars)
+  const [ searchChar, setSearchChar ] = useState('')
+  const [ result, setResult ] = useState()
+
+
   return (
     <div className="grid w-screen justify-center pt-4">
       <form class="mb-0 hidden lg:flex">
